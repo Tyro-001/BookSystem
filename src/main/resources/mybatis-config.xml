@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--日志·log-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+<!--    将此包下的pojo类，别名-->
+    <typeAliases>
+        <package name="com.Jin.pojo"/>
+    </typeAliases>
+
+<!--    将mapper.xml文件绑定到配置文件中-->
+    <mappers>
+        <mapper class="com.Jin.dao.BookMapper"/>
+    </mappers>
+
+
+</configuration>
